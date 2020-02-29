@@ -1,0 +1,4 @@
+.lan
+.local
+.localhost
+.test
