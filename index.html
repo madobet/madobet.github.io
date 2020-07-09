@@ -5,19 +5,64 @@
     <meta charset="utf-8">
     <!-- <link rel=icon href="tooko_icon.png" sizes="215x215" type="image/png"> -->
     <link rel="stylesheet" type="text/css" href="style.min.css">
-    <title>Tooko's Home</title>
+    <title>Tooko Tells You</title>
 </head>
 
-<body style="text-align: center">
-    <div style="text-align: center; margin: auto">
-        <img src="img/hk416.gif" style="max-width: 100%; height: auto"></img>
-        <h1>Pico Note</h1>
-        <p><a href="concept/machine_learning">Machine Learning</a></p>
-        <p><a href="concept/ic_industry">IC Industry</a></p>
-        <p><a href="concept/arm">ARM Story</a></p>
-    </div>
-    <hr />
-    <p style="text-align: center">Copyright © 2020 Tooko Madobe All Rights Reserved</p>
+<body>
+    <div class="content">
+        <div class="section">
+          <div class="bgimage" style="background-image: url(/img/verniy.jpg);">
+          </div>
+          <div class="text">
+            <h1 class="banner" style="line-height: 100%">Pico Note</h1>
+            <img src="img/hk416.gif" style="max-width: 100%; height: auto"></img>
+            <div>
+              <p class="introduce">Index</p>
+              <!-- <video autoplay loop height="120">
+                <source src="/video/eldridge.webm" type="video/webm">
+                <source src="/video/eldridge.mp4" type="video/mp4">
+              </video> -->
+            </div>
+
+            <div class="url-guide">
+
+              <!-- Utilities -->
+              <div class="util">
+                <a href="concept/machine_learning"><button style="
+                background-color: lightblue
+                ">Machine Learning</button></a>
+                <a href="concept/linux"><button>Linux Tech Tips</button></a>
+              </div>
+
+              <!-- Development -->
+              <div class="dev">
+                <a href="concept/ic_industry"><button>IC Industry</button></a>
+              </div>
+
+              <!-- ????? Embedded System -->
+              <div class="device">
+                <a href="concept/arm"><button>ARM Story</button></a>
+              </div>
+
+              <!-- Picture -->
+              <div class="secure">
+                <button><a href="img/SiliconValleyGenealogy.jpg">Silicon Valley History</a>
+                        <a href="doc/SiliconValleyGenealogy.pdf">(PDF)</a>
+                </button>
+              </div>
+
+              <hr />
+              <p style="text-align: center">Copyright © 2020 Tooko Madobe All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <iframe id="water" frameborder="0" scrolling="no" src="wave.html"></iframe>
+        </div>
+      </div>
+
+
+
 </body>
 
 </html>
