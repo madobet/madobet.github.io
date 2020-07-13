@@ -63,14 +63,14 @@ div.url-guide {
 }
 
 div.url-guide a {
-  font-family: Google Sans;
+  /* font-family: Google Sans; */
   font-size: 13pt;
   color: whitesmoke;
   text-shadow: 4px 4px 4px black;
 }
 
 div.url-guide button {
-  font-family: Google Sans;
+  /* font-family: Google Sans; */
   font-size: 13pt;
   color: whitesmoke;
   text-shadow: 4px 4px 4px black;

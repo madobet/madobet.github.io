@@ -1,2 +1,2 @@
-# mado.bet
-madobet's homepage
+# Net Index
+Homepage
