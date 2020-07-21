@@ -402,3 +402,45 @@ CUPS (旧称 Common Unix Printing System) 的安装很简单的： 然后启动 
 老：这就是乐高。他就是用来拆装的。这才是游戏的真谛。
 新：但我不希望总是拆拆装装，我仅仅希望一个玩具车而已！
 老：呃，你到底是为什么要买乐高？
+
+
+# Tips Collection
+
+在 Archlinux 上安装 rpm-tools 的注意事项
+```shell
+:: Synchronizing package databases...
+ core is up to date
+ extra is up to date
+ community                      5.1 MiB  3.95 MiB/s 00:01 [###############################] 100%
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) rpm-tools-4.15.1-2
+
+Total Download Size:   0.93 MiB
+Total Installed Size:  3.72 MiB
+
+:: Proceed with installation? [Y/n]
+:: Retrieving packages...
+ rpm-tools-4.15.1-2-x86_64    956.9 KiB  10.4 MiB/s 00:00 [###############################] 100%
+(1/1) checking keys in keyring                            [###############################] 100%
+(1/1) checking package integrity                          [###############################] 100%
+(1/1) loading package files                               [###############################] 100%
+(1/1) checking for file conflicts                         [###############################] 100%
+(1/1) checking available disk space                       [###############################] 100%
+:: Processing package changes...
+(1/1) installing rpm-tools                                [###############################] 100%
+    rpm-tools installs RedHat package manager for you.
+    It is useful for those who wants to create/modify RPM files.
+    But do not use rpm-tools to install RedHat packages at your ArchLinux machine.
+    It will break your system!
+    You will need to go back to Arch wiki and read the installation guide again.
+    You've been warned!
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+```
+
+polybar 出现如下错误是因为 jsoncpp 每次更新会变动 .so 库的名称，因此需要重新更新（编译）对应的 ploybar，可见仓库内的 issue
+```shell
+error while loading shared libraries: libjsoncpp.so.22: cannot open shared object file: No such file or directory
+```
